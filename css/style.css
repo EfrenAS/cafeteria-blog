@@ -46,6 +46,7 @@ img {
 /*** Utilities ***/
 .container {
   max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -78,6 +79,33 @@ img {
 
 .site-header h1 span {
   font-weight: 700;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* blog and courses */
+.blog,
+.courses {
+  flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    justify-content: space-between;
+  }
+
+  .blog {
+    flex-basis: 66.6%;
+    order: -1;
+  }
+
+  .courses {
+    flex-basis: calc(33.3% - 4rem);
+  }
 }
 
 /* Navigation */
