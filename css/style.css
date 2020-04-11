@@ -59,6 +59,33 @@ img {
   margin: 0;
 }
 
+/* Buttons */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    display: inline-block;
+  }
+}
+
+.btn-primary {
+  background-color: #000000;
+}
+
+.btn-secondary {
+  background-color: #784d3c;
+}
+
 /*** Class Definition ***/
 
 /** Header **/
