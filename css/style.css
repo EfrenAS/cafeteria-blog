@@ -25,6 +25,7 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  line-height: 1.2;
 }
 
 h3 {
@@ -91,6 +92,30 @@ img {
 .blog,
 .courses {
   flex: 0 0 100%;
+}
+
+.courses-list {
+  padding: 0;
+  list-style: none;
+}
+
+.course {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.course:last-of-type {
+  border-bottom: none;
+}
+
+.course p{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.course span {
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
