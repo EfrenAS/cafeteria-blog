@@ -75,6 +75,7 @@ img {
 @media (min-width: 768px) {
   .btn {
     display: inline-block;
+    font-size: 1.2rem;
   }
 }
 
@@ -97,7 +98,7 @@ img {
   height: 60rem;
 }
 
-.site-header a {
+.navbar a {
   color: #ffffff;
 }
 
@@ -109,7 +110,7 @@ img {
   font-weight: 700;
 }
 
-/* Main Content */
+/** Main Content **/
 .main-content {
   display: flex;
   flex-wrap: wrap;
@@ -199,4 +200,22 @@ img {
 
 .text-header p {
   font-size: 2.2rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #000000;
+  padding: 3rem;
+  margin-top: 4rem;
+}
+
+.site-footer p {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+.site-footer p span {
+  font-weight: 700;
 }
