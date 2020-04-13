@@ -45,16 +45,32 @@ img {
 }
 
 /*** Utilities ***/
+
+/* Container */
 .container {
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
 }
 
+/* Grid */
+@media (min-width: 768px) {
+  .grid {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-6 {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+/* Text Center */
 .text-center {
   text-align: center;
 }
 
+/* No Margin */
 .no-margin {
   margin: 0;
 }
@@ -214,6 +230,7 @@ img {
   font-weight: 400;
   font-family: 'PT Sans', sans-serif;
   text-align: center;
+  color: #ffffff;
 }
 
 .site-footer p span {
