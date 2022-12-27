@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --brown: #784d3c;
+  --light-gray: #e1e1e1;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-secondary: 'PT Sans', sans-serif;
+}
+
 /*** Globals ***/
 html {
   box-sizing: border-box;
@@ -9,13 +18,13 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--font-primary);
   font-size: 1.6rem;
   line-height: 2;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: var(--font-secondary);
 }
 
 h1 {
@@ -48,18 +57,19 @@ img {
 
 /* Container */
 .container {
+  margin: 0 auto;
   max-width: 1200px;
   width: 95%;
-  margin: 0 auto;
 }
 
 /* Grid */
 @media (min-width: 768px) {
   .grid {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
+
   .col-center {
     justify-content: center;
   }
@@ -98,16 +108,16 @@ img {
 
 /* Buttons */
 .btn {
+  color: var(--secondary-color);
   display: block;
-  text-align: center;
-  padding: 1rem 3rem;
-  margin: 2rem 0;
-  color: #ffffff;
+  flex: 0 0 100%;
+  font-size: 2rem;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
+  margin: 2rem 0;
+  padding: 1rem 3rem;
+  text-align: center;
   text-transform: uppercase;
-  font-size: 2rem;
-  flex: 0 0 100%;
 }
 
 /** Font Weight **/
@@ -118,32 +128,32 @@ img {
 @media (min-width: 768px) {
   .btn {
     display: inline-block;
-    font-size: 1.2rem;
     flex: 0 0 auto;
+    font-size: 1.2rem;
   }
 }
 
 .btn-primary {
-  background-color: #000000;
+  background-color: var(--primary-color);
 }
 
 .btn-secondary {
-  background-color: #784d3c;
+  background-color: var(--brown);
 }
 
 /*** Class Definition ***/
 
 /** Header **/
 .site-header {
-  background-image: url(../img/banner.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   height: 60rem;
+  background-image: url(../img/banner.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: var(--secondary-color);
 }
 
 .site-header h1 {
@@ -167,14 +177,14 @@ img {
 }
 
 .courses-list {
-  padding: 0;
   list-style: none;
+  padding: 0;
 }
 
 .course {
-  padding-top: 2rem;
+  border-bottom: 1px solid var(--light-gray);
   padding-bottom: 3rem;
-  border-bottom: 1px solid #e1e1e1;
+  padding-top: 2rem;
 }
 
 .course:last-of-type {
@@ -183,8 +193,8 @@ img {
 
 .course p{
   font-family: 'PT Sans', sans-serif;
-  font-weight: 700;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .course span {
@@ -209,9 +219,9 @@ img {
 /* Navigation */
 @media (min-width: 768px) {
   .navbar {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -233,7 +243,7 @@ img {
 
 /* Text Header */
 .text-header {
-  color: #ffffff;
+  color: var(--secondary-color);
   margin-top: 5rem;
 }
 
@@ -249,17 +259,17 @@ img {
 
 /* Footer */
 .site-footer {
-  background-color: #000000;
+  background-color: var(--primary-color);
   padding: 3rem;
   margin-top: 4rem;
 }
 
 .site-footer p {
+  color: var(--secondary-color);
+  font-family: 'PT Sans', sans-serif;
   font-size: 4rem;
   font-weight: 400;
-  font-family: 'PT Sans', sans-serif;
   text-align: center;
-  color: #ffffff;
 }
 
 .site-footer p span {
@@ -269,7 +279,7 @@ img {
 /** Contact **/
 
 .contact-form {
-  background-color: #ffffff;
+  background-color: var(--secondary-color);
   padding: 5rem;
 }
 
@@ -292,8 +302,8 @@ img {
 
 .field-groups input:not([type="submit"]),
 .field-groups textarea {
+  border: 1px solid var(--light-gray);
   flex: 1;
-  border: 1px solid #e1e1e1;
   padding: 1rem;
 }
 
