@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Blog de Café</title>
+  <meta name="description" content="Pagina Web de blog de cafe">
   <!-- Prefetch -->
   <link rel="prefetch" href="courses.html">
-  
+
   <!-- Preload -->
   <link rel="preload" href="css/normalize.css" as="style">
   <link rel="stylesheet" href="css/normalize.css">
@@ -15,7 +16,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preload" href="img/blog1.jpg" as="image">
 </head>
 <body>
   <header class="site-header">
@@ -41,7 +41,10 @@
       <h2>Nuestro Blog</h2>
       <article class="blog-post">
         <div class="blog-image">
+          <picture>
+            <source loading="lazy" srcset="img/blog1.webp" type="img/webp">
             <img src="img/blog1.jpg" alt="Imagen blog" class="blog-image" loading="lazy">
+          </picture>
         </div>
         <div class="blog-content">
           <h3>Tipos de Granos de Café</h3>
@@ -54,7 +57,10 @@
       </article>
       <article class="blog-post">
         <div class="blog-image">
+          <picture>
+            <source loading="lazy" srcset="img/blog3.webp" type="img/webp">
             <img src="img/blog3.jpg" alt="Imagen blog" class="blog-image" loading="lazy">
+          </picture>
         </div>
         <div class="blog-content">
           <h3>3 Deliciosas recetas para Café</h3>
@@ -73,13 +79,13 @@
           <h4 class="no-margin">Técnicas de extracción de Café</h4>
           <p class="no-margin">Precio: <span>Gratis</span></p>
           <p class="no-margin">Cupo:<span>20</span></p>
-          <a href="blog-post.html" class="btn btn-secondary">Más información</a>
+          <a href="blog-post.html" class="btn btn-secondary">Más información sobre nuestros cursos</a>
         </li>
         <li class="course">
             <h4 class="no-margin">4 Recetas de Café para Principiantes</h4>
             <p class="no-margin">Precio: <span>Gratis</span></p>
             <p class="no-margin">Cupo:<span>20</span></p>
-            <a href="blog-post.html" class="btn btn-secondary">Más información</a>
+            <a href="blog-post.html" class="btn btn-secondary">Más información sobre nuestros cursos</a>
           </li>
       </ul>
     </aside>
